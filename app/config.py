@@ -11,5 +11,6 @@
 
 class Config(object):
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = 'aqlite://:memory:'
-    SQLALCHEMY_TRACK_MODIFICATION = False
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///movies.db'
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    RESTX_JSON = {'ensure_ascii': False, }
